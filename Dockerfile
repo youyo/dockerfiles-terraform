@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER youyo
 
-ENV TERRAFORM_VERSION=0.9.11
+ENV TERRAFORM_VERSION=0.10.0
 
 RUN apk add --no-cache --update ca-certificates openssl curl && \
 	wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
